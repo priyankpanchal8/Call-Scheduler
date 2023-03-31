@@ -1,0 +1,93 @@
+:root {
+  --Primary: #283593;
+  --PrimaryLight: #5C6BC0;
+  --PrimaryDark: #1A237E;
+}
+
+html,
+body {
+  height: 100%;
+  background: #ddd;
+}
+
+hr{
+  margin: 25px;
+}
+
+.loader{
+  height: 60vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-bordered{
+  border-color: var(--PrimaryLight);
+}
+
+.hide{
+  display: none;
+}
+
+.loader img{
+  height: 100px;
+  width: 100px;
+}
+
+.OrangeLink{
+  color: var(--Primary);
+  text-decoration: none;
+}
+.OrangeLink:hover{
+  color: var(--PrimaryLight);
+}
+
+.navbar {
+  background-color: var(--PrimaryDark);
+}
+
+.navbar-nav a {
+  padding: 10px 20px;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.navbar-nav a:hover {
+  color: #fff;
+  background-color: var(--PrimaryLight);
+  border-radius: 25px;
+}
+
+.LoginBody {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.LoginBody .LoginForm {
+  justify-content: flex-start;
+  padding: 100px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .LoginBody .LoginForm {
+      width: 100%;
+      padding: 20px;
+      border-radius: 20px;
+  }
+
+  .LoginBody {
+      background-color: inherit;
+  }
+}
